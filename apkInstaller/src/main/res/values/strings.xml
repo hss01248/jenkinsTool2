@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install_please_open_install_permission">please allow the permission to install apk</string>
+</resources>

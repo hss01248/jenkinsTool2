@@ -1,0 +1,4 @@
+include ':jenkins'
+include ':app'
+rootProject.name = "JenkinsDownloader"
+include ':apkInstaller'

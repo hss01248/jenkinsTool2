@@ -18,6 +18,7 @@ public class BaseApp extends MultiDexApplication {
     public void onCreate() {
         super.onCreate();
         JenkinsTool.init("http://xxx/api/json", "yyy",  "oooo");
+
         FileDownloader.setupOnApplicationOnCreate(this);
 
     }

@@ -183,9 +183,8 @@ public class JenkinsTool {
                                         if (!TextUtils.isEmpty(buildInfo.result)) {
                                             buildInfo.result = buildInfo.result.toLowerCase();
                                         }
-                                        if (buildInfo.desc.contains("<br />")) {
-                                            buildInfo.desc = buildInfo.desc.substring(0, buildInfo.desc.indexOf("<br />"));
-                                        }
+                                        buildInfo.desc = buildInfo.desc.replaceAll("<br />","\n");
+                                        buildInfo.desc = buildInfo.desc.replaceAll("<br/>","\n");
                                         try {
                                             String urlInJson = object.getString("url");
                                             HttpUrl url1 = HttpUrl.parse(urlInJson);

@@ -29,7 +29,8 @@ android {
 
 dependencies {
 
-    api 'com.github.hss01248.HttpUtil2:openuri:3.0.5'
+    //api 'com.github.hss01248.HttpUtil2:openuri:3.0.5'
+    api 'com.github.hss01248.utilcodeEnhance:openuri:1.5.8'
     api 'com.github.hss01248.StartActivityResult:activityresult:1.1.6'
     api project(path: ':apkInstaller')
     testImplementation 'junit:junit:4.+'

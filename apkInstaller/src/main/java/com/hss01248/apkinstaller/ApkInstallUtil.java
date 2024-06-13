@@ -17,7 +17,8 @@ import com.blankj.utilcode.util.ToastUtils;
 import com.hss01248.activityresult.ActivityResultListener;
 import com.hss01248.activityresult.StartActivityUtil;
 import com.hss01248.activityresult.TheActivityListener;
-import com.hss01248.openuri.OpenUri;
+import com.hss01248.openuri2.OpenUri2;
+
 
 import java.io.File;
 
@@ -97,7 +98,7 @@ public class ApkInstallUtil {
     private static void installApk(FragmentActivity activity, File file, InstallCallback callback) {
 
         try {
-            Uri uri = OpenUri.fromFile(activity, file);
+            Uri uri = OpenUri2.fromFile(activity, file);
             LogUtils.w(uri.toString());
             Intent intent = new Intent(Intent.ACTION_VIEW);
             //intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
